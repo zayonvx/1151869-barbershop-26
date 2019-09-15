@@ -122,19 +122,30 @@
           <a class="button black" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
       </footer>
-      <!--
+
         <section>
         <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-      -->
-        <!--Здесь будет форма-->
-      <!--
+
+          <form action="login.php" method="POST">
+            <legend>Введите пожалуйста свой логин и пароль</legend>
+            <label class="visually-hidden" for="login">Логин</label>
+            <input type="text" id="login" name="login-field" placeholder="Логин"><br>
+            <label class="visually-hidden" for="pass">Пароль</label>
+            <input type="password" id="pass" name="password-field" placeholder="Пароль"><br>
+            <input type="checkbox" name="remember-field" id="remember" checked>
+            <label for="remember">Запомните меня</label>
+            <a href="#">Я забыл пароль</a><br>
+            <input type="submit" class="button black" value="Войти">
+          </form>
+
         <button type="button">Закрыть</button>
       </section>
-      <section>
+
+
+      <!-- <section>
         <h2>Как до нас добраться</h2>
         <button type="button">Закрыть</button>
-      </section>
-      -->
+      </section> -->
+
   </body>
 </html>
