@@ -33,7 +33,28 @@
             </ul>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <!-- Здесь будет форма -->
+                <form action="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <ul>
+                            <li><input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked><label for="filter-baxter-of-california">Baxter Of California</label></li>
+                            <li><input type="checkbox" name="mr-natty" id="filter-mr-natty"><label for="filter-mr-natty">Mr Natty</label></li>
+                            <li><input type="checkbox" name="suavecito" id="filter-suavecito" checked><label for="filter-suavecito">Suavecito</label></li>
+                            <li><input type="checkbox" name="malin+goetz" id="filter-malin+goetz"><label for="filter-malin+goetz">Malin+Goetz</label></li>
+                            <li><input type="checkbox" name="murray's" id="filter-murray's"><label for="filter-murray's">Murray's</label></li>
+                            <li><input type="checkbox" name="american-crew" id="filter-american-crew" checked><label for="filter-american-crew">American Crew</label></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Группы Товаров:</legend>
+                        <ul>
+                            <li><input type="radio" name="product-group" id="shaving"><label for="filter-shave">Бритвенные принадлежности</label></li>
+                            <li><input type="radio" name="product-group" id="hair-care" checked><label for="filter-care">Средства для ухода</label></li>
+                            <li><input type="radio" name="product-group" id="accessories"><label for="filter-accessories">Аксессуары</label></li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
             </section>
             
             <section class="catalog">
@@ -186,20 +207,5 @@
                   <a href="https://htmlacademy.ru">HTML Academy</a>
                 </P>
               </footer>
-              <!--
-                <section>
-                <h2>Личный кабинет</h2>
-                <p>Введите свой логин и пароль.</p>
-              -->
-                <!--Здесь будет форма-->
-              <!--
-                <button type="button">Закрыть</button>
-              </section>
-              <section>
-                <h2>Как до нас добраться</h2>
-                <button type="button">Закрыть</button>
-              </section>
-              -->
-
   </body>
 </html>
