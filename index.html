@@ -7,7 +7,7 @@
   <body>
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html">
+          <a class="main-header-logo">
               <img src="img/logo_big.svg" width="371" height="155" alt="Логотип барбершопа Бородинский">
           </a>
           <nav>
@@ -21,7 +21,7 @@
           </nav>
           <ul class="user-navigation">
             <li>
-              <button type="button">Вход</button>
+              <a href="login.html" class="icon">Вход</a>
             </li>
           </ul>
         </nav>
@@ -86,8 +86,22 @@
         </section>
         <section>
           <h2 class="section-title">Записаться</h2>
-          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-          <!--здесь будет форма-->
+          <form action="booking.php" method="POST">
+            <legend>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</legend>
+            <label>Дата<br>
+              <input type="date" name="date" placeholder="08.10.2017">
+            </label>
+            <label>Время<br>
+              <input type="time" name="date" placeholder="10:00">
+            </label><br>
+            <label>Ваше имя<br>
+              <Input type="text" name="name" placeholder="Борода"></Input>
+            </label>
+            <label>Телефон<br>
+              <input type="tel" name="tel" placeholder="+7 123 456-78-90">
+            </label>
+            <input class="button black" type="submit">
+          </form>
         </section>
       </main>
       <footer>
