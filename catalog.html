@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп - каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
@@ -32,17 +34,17 @@
                 <li class="breadcrumbs-current">Средства для ухода</li>
             </ul>
             <section class="filters">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <h2 class="vis-hidden">Фильтр товаров</h2>
                 <form action="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Производители:</legend>
                         <ul>
-                            <li><input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked><label for="filter-baxter-of-california">Baxter Of California</label></li>
-                            <li><input type="checkbox" name="mr-natty" id="filter-mr-natty"><label for="filter-mr-natty">Mr Natty</label></li>
-                            <li><input type="checkbox" name="suavecito" id="filter-suavecito" checked><label for="filter-suavecito">Suavecito</label></li>
-                            <li><input type="checkbox" name="malin+goetz" id="filter-malin+goetz"><label for="filter-malin+goetz">Malin+Goetz</label></li>
-                            <li><input type="checkbox" name="murray's" id="filter-murray's"><label for="filter-murray's">Murray's</label></li>
-                            <li><input type="checkbox" name="american-crew" id="filter-american-crew" checked><label for="filter-american-crew">American Crew</label></li>
+                            <li><input class="filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked><label for="filter-baxter-of-california">Baxter Of California</label></li>
+                            <li><input class="filter-input" type="checkbox" name="mr-natty" id="filter-mr-natty"><label for="filter-mr-natty">Mr Natty</label></li>
+                            <li><input class="filter-input" type="checkbox" name="suavecito" id="filter-suavecito" checked><label for="filter-suavecito">Suavecito</label></li>
+                            <li><input class="filter-input" type="checkbox" name="malin+goetz" id="filter-malin+goetz"><label for="filter-malin+goetz">Malin+Goetz</label></li>
+                            <li><input class="filter-input" type="checkbox" name="murray's" id="filter-murray's"><label for="filter-murray's">Murray's</label></li>
+                            <li><input class="filter-input" type="checkbox" name="american-crew" id="filter-american-crew" checked><label for="filter-american-crew">American Crew</label></li>
                         </ul>
                     </fieldset>
                     <fieldset>
@@ -56,9 +58,9 @@
                     <button type="submit">Показать</button>
                 </form>
             </section>
-            
+
             <section class="catalog">
-                <h2 class="visually-hidden">Список средств для ухода</h2>
+                <h2 class="vis-hidden">Список средств для ухода</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <a href="catalog-item.html">
@@ -67,7 +69,7 @@
                                 </span>
                                 <span class="catalog-item-title">Baxter of California
                                 </span>
-                            
+
                             </h3>
                             <p class="catalog-item-image">
                                 <img src="img/catalog_item_1.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California">
@@ -78,7 +80,7 @@
                             <a class="button black" href="#">Купить</a>
                         </p>
                     </li>
-                    <!-- <li class="catalog-item">
+                    <li class="catalog-item">
                         <a href="catalog-item.html">
                             <h3>
                                     <span class="catalog-category">Увлажняющий кондиционер
@@ -113,7 +115,7 @@
                         </p>
                     </li>
                     <li class="catalog-item">
-                        <a href="catalog-item.html">                       
+                        <a href="catalog-item.html">
                             <h3>
                                 <span class="catalog-category">Гель для укладки волос
                                 </span>
@@ -162,7 +164,7 @@
                             <b>3 900 Р</b>
                             <a class="button black" href="#">Купить</a>
                         </p>
-                    </li> -->
+                    </li>
                 </ul>
                 <ul class="pagination-list">
                     <li class="pagination-item"><a href="#">1</a></li>
@@ -172,23 +174,41 @@
                 </ul>
             </section>
         </main>
-        <footer>
-                <p>Барбершоп Бородинский<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a href="map.html">Как нас найти?</a><br>
-                Телефон: +7 (812) 666-02-66
-                </p>
-                <div>
-                  <p>Давайте дружить!</p>
-                  <ul>
-                    <li><a href="#">Вконтакте</a></li>
-                    <li><a href="#">Фейсбук</a></li>
-                    <li><a href="#">Инстаграм</a></li>
-                  </ul>
-                </div>
-                <P>Разработано:
-                  <a href="https://htmlacademy.ru">HTML Academy</a>
-                </P>
-              </footer>
+        <footer class="main-footer">
+        <p class="footer-contacts">Барбершоп Бородинский<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+        </p>
+        <div class="footer-social">
+          <b>Давайте дружить!</b>
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">Разработано:
+          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+      </footer>
+      <section class="login modal">
+        <h2>Личный кабинет</h2>
+
+          <form action="login.php" method="POST">
+            <legend>Введите пожалуйста свой логин и пароль</legend>
+            <label class="vis-hidden" for="login">Логин</label>
+            <input type="text" id="login" name="login-field" placeholder="Логин"><br>
+            <label class="vis-hidden" for="pass">Пароль</label>
+            <input type="password" id="pass" name="password-field" placeholder="Пароль"><br>
+            <label class="login-checkbox">
+                <input class="checkbox" type="checkbox" name="remember-field" id="remember" checked>
+            </label>
+            <a class="restore" href="#">Я забыл пароль</a><br>
+            <input type="submit" class="button black" value="Войти">
+          </form>
+
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
   </body>
 </html>

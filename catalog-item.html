@@ -3,90 +3,111 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп - каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-        <header class="main-header">
-            <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html">
-                    <img src="img/logo_small.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-                </a>
-                <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="info.html">Информация</a></li>
-                <li class="site-navigation-item"><a href="news.html">Новости</a></li>
-                <li class="site-navigation-item"><a href="price.html">Прайс-лист</a></li>
-                <li class="site-navigation-item site-navigation-current"><a>Магазин</a></li>
-                <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
-                </ul>
-                <ul class="user-navigation">
-                <li>
-                    <button type="button">Войти</button>
-                </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-
-            <h1>Набор для путешествий Baxter of California</h1>
-
-            <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="#">Средства для ухода</a></li>
-                <li class="breadcrumbs-current">Набор для путешествий Baxter of California</li>
+  <body class="inner-page">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img src="img/logo_small.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+            </a>
+            <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+            <li class="site-navigation-item"><a href="news.html">Новости</a></li>
+            <li class="site-navigation-item"><a href="price.html">Прайс-лист</a></li>
+            <li class="site-navigation-item site-navigation-current"><a>Магазин</a></li>
+            <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
             </ul>
+            <ul class="user-navigation">
+            <li>
+                <button type="button">Войти</button>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
 
-            <section>
-                <h2 class="visually-hidden">Изображения товара</h2>
-                <p>
-                    <img src="img/baxter_main.jpg" width="484" height="522" alt="Фото всего набора">
-                </p>
-                <ul>
-                    <li><img src="img/baxter_add_1.jpg" width="164" height="173" alt="Фото в анфас"></li>
-                    <li><img src="img/baxter_add_2.jpg" width="164" height="173" alt="Фото в профиль"></li>
-                    <li><img src="img/baxter_add_3.jpg" width="164" height="173" alt="Фото отдельной части"></li>
-                </ul>
-            </section>
+        <h1 class="page-title">Набор для путешествий Baxter of California</h1>
 
-            <section>
-                <h2 class="visually-hidden">Описание товара</h2>
-                <p>Есть в наличии</p>
-                <p>Артикул: dexter-ae</p>
-                <p>Travel Kit - необходимый аксессуар во время любого путешействия. В аккуратной кожаной сумке находится все, что нужно для бритья
-                    и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бриться, крем после бритья,
-                    шампунь. Набор также может стать отличным подарком.
-                </p>
-                <p>
-                    2 900 Р
-                    <a class="button black" href="#">Купить</a>
-                </p>
-                <h3>В набор входят:</h3>
-                <ul>
-                    <li>Средство для умывания (50 мл)</li>
-                    <li>Увлажняющий крем (50 мл)</li>
-                    <li>Крем для бритья (50 мл)</li>
-                    <li>Крем после бритья, шампунь (50 мл)</li>
-                    <li>Удобная кожаная косметичка</li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-                <p>Барбершоп Бородинский<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a href="map.html">Как нас найти?</a><br>
-                Телефон: +7 (812) 666-02-66
-                </p>
-                <div>
-                  <p>Давайте дружить!</p>
-                  <ul>
-                    <li><a href="#">Вконтакте</a></li>
-                    <li><a href="#">Фейсбук</a></li>
-                    <li><a href="#">Инстаграм</a></li>
-                  </ul>
-                </div>
-                <P>Разработано:
-                  <a href="https://htmlacademy.ru">HTML Academy</a>
-                </P>
-              </footer>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Средства для ухода</a></li>
+            <li class="breadcrumbs-current">Набор для путешествий Baxter of California</li>
+        </ul>
 
+        <section class="product-photos">
+            <h2 class="vis-hidden">Изображения товара</h2>
+            <p class="product-photo-full">
+                <img src="img/baxter_main.jpg" width="484" height="522" alt="Фото всего набора">
+            </p>
+            <ul class="product-photo-preview">
+                <li><img src="img/baxter_add_1.jpg" width="164" height="173" alt="Фото в анфас"></li>
+                <li><img src="img/baxter_add_2.jpg" width="164" height="173" alt="Фото в профиль"></li>
+                <li><img src="img/baxter_add_3.jpg" width="164" height="173" alt="Фото отдельной части"></li>
+            </ul>
+        </section>
+
+        <section class="product-info">
+            <h2 class="vis-hidden">Описание товара</h2>
+            <div class="product-description">
+              <p class="product-available">Есть в наличии</p>
+              <p class="product-article">Артикул: dexter-ae</p>
+            </div>
+            <p class="product-text">Travel Kit - необходимый аксессуар во время любого путешействия. В аккуратной кожаной сумке находится все, что нужно для бритья
+                и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бриться, крем после бритья,
+                шампунь. Набор также может стать отличным подарком.
+            </p>
+            <p class="product-price">
+                <b>2 900 Р</b>
+                <a class="button black" href="#">Купить</a>
+            </p>
+            <h3>В набор входят:</h3>
+            <ul>
+                <li>Средство для умывания (50 мл)</li>
+                <li>Увлажняющий крем (50 мл)</li>
+                <li>Крем для бритья (50 мл)</li>
+                <li>Крем после бритья, шампунь (50 мл)</li>
+                <li>Удобная кожаная косметичка</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+      <p class="footer-contacts">Барбершоп Бородинский<br>
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      <a href="map.html">Как нас найти?</a><br>
+      Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">Разработано:
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+    <section class="login modal">
+      <h2>Личный кабинет</h2>
+
+        <form action="login.php" method="POST">
+          <legend>Введите пожалуйста свой логин и пароль</legend>
+          <label class="vis-hidden" for="login">Логин</label>
+          <input type="text" id="login" name="login-field" placeholder="Логин"><br>
+          <label class="vis-hidden" for="pass">Пароль</label>
+          <input type="password" id="pass" name="password-field" placeholder="Пароль"><br>
+          <label class="login-checkbox">
+              <input class="checkbox" type="checkbox" name="remember-field" id="remember" checked>
+          </label>
+          <a class="restore" href="#">Я забыл пароль</a><br>
+          <input type="submit" class="button black" value="Войти">
+        </form>
+
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
